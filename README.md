@@ -20,13 +20,59 @@ To implement univariate Linear Regression to fit a straight line using least squ
 ```
 /*
 Program to implement univariate Linear Regression to fit a straight line using least squares.
-Developed by: 
-RegisterNumber:  
+Developed by: THULASI J
+RegisterNumber: 212224250020
 */
+```
+```
+import numpy as np
+import matplotlib.pyplot as plt
+```
+```
+x = np.array([1, 2, 3, 4, 5])
+y = np.array([2, 4, 5, 4, 5])
+```
+```
+x_mean = np.mean(x)
+y_mean = np.mean(y)
+
+```
+```
+num = 0
+denom = 0
+for i in range(len(x)):
+    num += (x[i] - x_mean) * (y[i] - y_mean)
+    denom += (x[i] - x_mean)**2
+
+```
+```
+m = num / denom
+b = y_mean - m * x_mean
+```
+
+```
+y_predicted = m * x + b
+print(y_predicted)
+
+```
+<img width="325" height="50" alt="image" src="https://github.com/user-attachments/assets/6e081def-0750-4e0f-aa10-489df69e462f" />
+
+
+```
+print(m, b)
+```
+<img width="236" height="37" alt="image" src="https://github.com/user-attachments/assets/0084515d-97c3-4b92-9f35-4580c01bafe8" />
+
+
+```
+plt.scatter(x, y)                
+plt.plot(x, y_predicted, color='red')  
+plt.show()
 ```
 
 ## Output:
-![best fit line](sam.png)
+
+<img width="811" height="577" alt="image" src="https://github.com/user-attachments/assets/54009a0d-5b53-4399-8fff-28b854c9d07b" />
 
 
 ## Result:
