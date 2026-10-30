@@ -63,7 +63,9 @@ plt.show()
 
 
 ## Output:
-<img width="352" height="290" alt="image" src="https://github.com/user-attachments/assets/666cb401-c81a-49b7-9994-2bb73844e928" />
+
+<img width="335" height="295" alt="image" src="https://github.com/user-attachments/assets/54ac83b7-6821-4360-9032-4981db2c2b51" />
+
 
 
 ## Result:
