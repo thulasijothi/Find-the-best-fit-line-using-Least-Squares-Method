@@ -23,8 +23,6 @@ Program to implement univariate Linear Regression to fit a straight line using l
 Developed by: THULASI J
 RegisterNumber: 212224250020
 */
-```
-```
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -60,6 +58,10 @@ plt.title("Univariate Linear Regression")
 plt.legend()
 plt.grid(True)
 plt.show()
+
+
+```
+
 
 
 ## Output:
