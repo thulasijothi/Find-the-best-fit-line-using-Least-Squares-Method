@@ -27,48 +27,40 @@ RegisterNumber: 212224250020
 ```
 import numpy as np
 import matplotlib.pyplot as plt
-```
-```
-x = np.array([1, 2, 3, 4, 5])
-y = np.array([2, 4, 5, 4, 5])
-```
-```
-x_mean = np.mean(x)
-y_mean = np.mean(y)
 
-```
-```
-num = 0
-denom = 0
-for i in range(len(x)):
-    num += (x[i] - x_mean) * (y[i] - y_mean)
-    denom += (x[i] - x_mean)**2
+# Get independent and dependent variables
+X = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+Y = np.array([0, 3, 5, 7, 9, 11, 13, 2, 4, 8])
 
-```
-```
-m = num / denom
-b = y_mean - m * x_mean
-```
+# Calculate mean values
+mean_X = np.mean(X)
+mean_Y = np.mean(Y)
 
-```
-y_predicted = m * x + b
-print(y_predicted)
+# Calculate slope
+m = np.sum((X - mean_X) * (Y - mean_Y)) / np.sum((X - mean_X)**2)
 
-```
-<img width="325" height="50" alt="image" src="https://github.com/user-attachments/assets/6e081def-0750-4e0f-aa10-489df69e462f" />
+# Calculate y-intercept
+b = mean_Y - m * mean_X
 
+# Calculate predicted Y values
+Y_pred = m * X + b
 
-```
-print(m, b)
-```
-<img width="236" height="37" alt="image" src="https://github.com/user-attachments/assets/0084515d-97c3-4b92-9f35-4580c01bafe8" />
+# Display the regression equation
+print("Slope (m) =", m)
+print("Y-intercept (b) =", b)
+print("Regression Equation: Y =", m, "X +", b)
 
+# Plot scatterplot and regression line
+plt.scatter(X, Y, color='blue', label='Actual Data')
+plt.plot(X, Y_pred, color='red', label='Best Fit Line')
 
-```
-plt.scatter(x, y)                
-plt.plot(x, y_predicted, color='red')  
+plt.xlabel("Independent Variable (X)")
+plt.ylabel("Dependent Variable (Y)")
+plt.title("Univariate Linear Regression")
+plt.legend()
+plt.grid(True)
 plt.show()
-```
+
 
 ## Output:
 
