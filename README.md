@@ -63,11 +63,7 @@ plt.show()
 
 
 ## Output:
-
-Slope (m) = 0.5090909090909091
-Y-intercept (b) = 3.4
-Regression Equation: Y = 0.5090909090909091 X + 3.4
-<img width="562" height="455" alt="image" src="https://github.com/user-attachments/assets/8e25ca79-95b8-4608-bed4-f8ee56a0466f" />
+<img width="352" height="290" alt="image" src="https://github.com/user-attachments/assets/666cb401-c81a-49b7-9994-2bb73844e928" />
 
 
 ## Result:
